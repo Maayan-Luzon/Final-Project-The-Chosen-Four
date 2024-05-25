@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DB_Project.Models.GameLevel">
+    <Position X="8.5" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAEAAAAAAgAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Models\GameLevel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DB_Project.Models.GameUser">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAABAAAAAAAAAgAAAAEAAAAAQAAAAIAAEA=</HashCode>
+      <FileName>Models\GameUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DB_Project.Models.Product">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAQAAAAAEAAAAAAgAAAAQAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Models\Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DB_Project.Models.Set">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>GAAIAIAAAAAAIQAAAAAAgQAhAAIEEEAAAAQAJAJAABA=</HashCode>
+      <FileName>Models\Set.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DB_Project.Server">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAACAAACAAAAhQ0AAQAAAABAIAAAAACAPAhBCEAAAAA=</HashCode>
+      <FileName>Server.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Arial" Size="10" />
+</ClassDiagram>

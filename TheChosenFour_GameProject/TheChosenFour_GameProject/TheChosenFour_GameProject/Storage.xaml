@@ -1,0 +1,538 @@
+﻿<Page
+    x:Class="TheChosenFour_GameProject.Storage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Loaded="Page_Loaded"
+    PreviewKeyDown="Page_PreviewKeyDown"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+
+        </Grid.ColumnDefinitions> 
+
+        <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+        <Grid.Background> 
+            <ImageBrush ImageSource="/Assets/Backgrounds/wallBackround.jpg" />
+        </Grid.Background>
+        
+        <Button x:Name="MenuButton" Grid.Row="0" Grid.Column="15" Background="Transparent" Click="MenuButton_Click" Style="{StaticResource MyButtonStyle}"
+        PointerEntered="MenuButton_PointerEntered" PointerExited="MenuButton_PointerExited" MinWidth="20" MinHeight="20">
+            <Image x:Name="menuImage" Source="/Assets/Buttons/Home1.png" Height="78" VerticalAlignment="Bottom" />
+        </Button>
+        
+        <Viewbox Grid.Column="4" Grid.ColumnSpan="8" Grid.Row="0">
+            <TextBlock FontFamily="Algerian" Text="Storage" FontSize="10" Foreground="AliceBlue" 
+                       TextDecorations="Underline"></TextBlock>
+        </Viewbox>
+
+
+        <Viewbox Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="1">
+            <TextBlock FontFamily="Algerian" Text="Money:" FontSize="10" Height="13" Foreground="AliceBlue"></TextBlock>
+        </Viewbox>
+        
+        <Viewbox Grid.Column="4" Grid.ColumnSpan="3" Grid.Row="1"  HorizontalAlignment="Left">
+            <TextBlock x:Name="amountOfMoney" FontFamily="Algerian" Height="13" Text="0" FontSize="10" Foreground="AliceBlue"></TextBlock>
+        </Viewbox>
+        
+        <Viewbox Grid.Column="5" Grid.ColumnSpan="2" Grid.Row="1" >
+            <Image Source="/Assets/Elements/goldCoinSymbol.png" Height="20" Width="15"/>
+        </Viewbox>
+
+        <Button x:Name="helpButton" Style="{StaticResource MyButtonStyle}" Grid.Column="14" PointerEntered="clothingItem_PointerEntered"
+                PointerExited="clothingItem_PointerExited" Click="helpButton_Click">
+            <Image x:Name="helpImage" Source="/Assets/Buttons/woodButtonHelp.png" Stretch="Fill"/>
+        </Button>
+
+        <Grid x:Name="simpleWoodAndStrongWoodGrid" Grid.Row="2" Grid.RowSpan="7" Grid.Column="1" Grid.ColumnSpan="9" Visibility="Visible">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid.Background>
+                <ImageBrush  ImageSource="/Assets/ChoosingBoards/whiteBoard.png" />
+            </Grid.Background>
+            
+            <Image x:Name="simpleWoodShoe" Source="/Assets/Clothes/SimpleWood/simpleWoodShoe.png" Grid.Column="1" Grid.Row="1" 
+                   PointerEntered="clothingItem_PointerEntered" PointerExited="clothingItem_PointerExited" PointerPressed="clothingItem_PointerPressed"/>
+            <Image x:Name="simpleWoodShirt" Source="/Assets/Clothes/SimpleWood/simpleWoodShirt.png" Grid.Column="3" Grid.Row="1"
+                   PointerEntered="clothingItem_PointerEntered" PointerExited="clothingItem_PointerExited" PointerPressed="clothingItem_PointerPressed"/>
+            <Image x:Name="simpleWoodShield" Source="/Assets/Clothes/SimpleWood/simpleWoodShield.png" Grid.Column="5" Grid.Row="1"
+                   PointerEntered="clothingItem_PointerEntered" PointerExited="clothingItem_PointerExited" PointerPressed="clothingItem_PointerPressed"/>
+            <Image x:Name="simpleWoodSword" Source="/Assets/Clothes/SimpleWood/simpleWoodSword.png" Grid.Column="7" Grid.Row="1"
+                   PointerEntered="clothingItem_PointerEntered" PointerExited="clothingItem_PointerExited" PointerPressed="clothingItem_PointerPressed"/>
+            <Image x:Name="simpleWoodBow" Source="/Assets/Clothes/SimpleWood/simpleWoodBow.png" Grid.Column="9" Grid.Row="1"
+                   PointerEntered="clothingItem_PointerEntered" PointerExited="clothingItem_PointerExited" PointerPressed="clothingItem_PointerPressed"/>
+            <Image x:Name="strongWoodShoe" Source="/Assets/Clothes/StrongWood/strongWoodShoe.png" Grid.Column="1" Grid.Row="4"
+                   PointerEntered="clothingItem_PointerEntered" PointerExited="clothingItem_PointerExited" PointerPressed="clothingItem_PointerPressed"/>
+            <Image x:Name="strongWoodShirt" Source="/Assets/Clothes/StrongWood/strongWoodShirt.png" Grid.Column="3" Grid.Row="4"
+                   PointerEntered="clothingItem_PointerEntered" PointerExited="clothingItem_PointerExited" PointerPressed="clothingItem_PointerPressed"/>
+            <Image x:Name="strongWoodShield" Source="/Assets/Clothes/StrongWood/strongWoodShield.png" Grid.Column="5" Grid.Row="4"
+                   PointerEntered="clothingItem_PointerEntered" PointerExited="clothingItem_PointerExited" PointerPressed="clothingItem_PointerPressed"/>
+            <Image x:Name="strongWoodSword" Source="/Assets/Clothes/StrongWood/strongWoodSword.png" Grid.Column="7" Grid.Row="4"
+                   PointerEntered="clothingItem_PointerEntered" PointerExited="clothingItem_PointerExited" PointerPressed="clothingItem_PointerPressed"/>
+            <Image x:Name="strongWoodBow" Source="/Assets/Clothes/StrongWood/strongWoodBow.png" Grid.Column="9" Grid.Row="4"
+                   PointerEntered="clothingItem_PointerEntered" PointerExited="clothingItem_PointerExited" PointerPressed="clothingItem_PointerPressed"/>
+
+            <Viewbox Grid.Column="1" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <TextBlock x:Name="simpleWoodShoePrice" Text="10" Height="30" Width="35" Loaded="Price_Loaded">
+                </TextBlock>
+            </Viewbox>
+
+            <Viewbox Grid.Column="1" Grid.Row="2" VerticalAlignment="Top" Margin="0,5,0,0"> <!--no margin-->
+                <Image Source="/Assets/Elements/goldCoinSymbol.png" VerticalAlignment="Center" HorizontalAlignment="Right" Height="30" Width="70"/> <!--width = 55-->
+            </Viewbox>
+
+            <Viewbox Grid.Column="3" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <TextBlock x:Name="simpleWoodShirtPrice" Text="10" Height="30" Width="35" Loaded="Price_Loaded">
+                </TextBlock>
+            </Viewbox>
+
+            <Viewbox Grid.Column="3" Grid.Row="2" VerticalAlignment="Top" Margin="0,5,0,0">
+                <Image Source="/Assets/Elements/goldCoinSymbol.png" VerticalAlignment="Top" HorizontalAlignment="Right" Height="30" Width="70"/>
+            </Viewbox>
+
+            <Viewbox Grid.Column="5" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <TextBlock x:Name="simpleWoodShieldPrice" Text="10" Height="30" Width="35" Loaded="Price_Loaded">
+                </TextBlock>
+            </Viewbox>
+
+            <Viewbox Grid.Column="5" Grid.Row="2" VerticalAlignment="Top" Margin="0,5,0,0">
+                <Image Source="/Assets/Elements/goldCoinSymbol.png" VerticalAlignment="Top" HorizontalAlignment="Right" Height="30" Width="70"/>
+            </Viewbox>
+
+            <Viewbox Grid.Column="7" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <TextBlock x:Name="simpleWoodSwordPrice" Text="10" Height="30" Width="35" Loaded="Price_Loaded">
+                </TextBlock>
+            </Viewbox>
+
+            <Viewbox Grid.Column="7" Grid.Row="2" VerticalAlignment="Top" Margin="0,5,0,0">
+                <Image Source="/Assets/Elements/goldCoinSymbol.png" VerticalAlignment="Top" HorizontalAlignment="Right" Height="30" Width="70"/>
+            </Viewbox>
+
+            <Viewbox Grid.Column="9" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <TextBlock x:Name="simpleWoodBowPrice" Text="10" Height="30" Width="35" Loaded="Price_Loaded">
+                </TextBlock>
+            </Viewbox>
+
+            <Viewbox Grid.Column="9" Grid.Row="2" VerticalAlignment="Top" Margin="0,5,0,0">
+                <Image Source="/Assets/Elements/goldCoinSymbol.png" VerticalAlignment="Top" HorizontalAlignment="Right" Height="30" Width="70"/>
+            </Viewbox>
+            
+            <Viewbox Grid.Column="1" Grid.Row="5" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <TextBlock x:Name="strongWoodShoePrice" Text="10" Height="30" Width="35" Loaded="Price_Loaded">
+                </TextBlock>
+            </Viewbox>
+
+            <Viewbox Grid.Column="1" Grid.Row="5" VerticalAlignment="Top" Margin="0,5,0,0">
+                <Image Source="/Assets/Elements/goldCoinSymbol.png" VerticalAlignment="Top" HorizontalAlignment="Right" Height="30" Width="70"/>
+            </Viewbox>
+
+            <Viewbox Grid.Column="3" Grid.Row="5" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <TextBlock x:Name="strongWoodShirtPrice" Text="10" Height="30" Width="35" Loaded="Price_Loaded">
+                </TextBlock>
+            </Viewbox>
+
+            <Viewbox Grid.Column="3" Grid.Row="5" VerticalAlignment="Top" Margin="0,5,0,0">
+                <Image Source="/Assets/Elements/goldCoinSymbol.png" VerticalAlignment="Top" HorizontalAlignment="Right" Height="30" Width="70"/>
+            </Viewbox>
+
+            <Viewbox Grid.Column="5" Grid.Row="5" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <TextBlock x:Name="strongWoodShieldPrice" Text="10" Height="30" Width="35" Loaded="Price_Loaded">
+                </TextBlock>
+            </Viewbox>
+
+            <Viewbox Grid.Column="5" Grid.Row="5" VerticalAlignment="Top" Margin="0,5,0,0">
+                <Image Source="/Assets/Elements/goldCoinSymbol.png" VerticalAlignment="Top" HorizontalAlignment="Right" Height="30" Width="70"/>
+            </Viewbox>
+
+            <Viewbox Grid.Column="7" Grid.Row="5" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <TextBlock x:Name="strongWoodSwordPrice" Text="10" Height="30" Width="35" Loaded="Price_Loaded">
+                </TextBlock>
+            </Viewbox>
+
+            <Viewbox Grid.Column="7" Grid.Row="5" VerticalAlignment="Top" Margin="0,5,0,0">
+                <Image Source="/Assets/Elements/goldCoinSymbol.png" VerticalAlignment="Top" HorizontalAlignment="Right" Height="30" Width="70"/>
+            </Viewbox>
+
+            <Viewbox Grid.Column="9" Grid.Row="5" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <TextBlock x:Name="strongWoodBowPrice" Text="10" Height="30" Width="35" Loaded="Price_Loaded">
+                </TextBlock>
+            </Viewbox>
+
+            <Viewbox Grid.Column="9" Grid.Row="5" VerticalAlignment="Top" Margin="0,5,0,0">
+                <Image Source="/Assets/Elements/goldCoinSymbol.png" VerticalAlignment="Top" HorizontalAlignment="Right" Height="30" Width="70"/>
+            </Viewbox>
+
+        </Grid>
+
+
+        <Grid x:Name="simpleIronAndStrongSilverGrid" Grid.Row="2" Grid.RowSpan="7" Grid.Column="1" Grid.ColumnSpan="9" Visibility="Collapsed">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid.Background>
+                <ImageBrush  ImageSource="/Assets/ChoosingBoards/whiteBoard.png" />
+            </Grid.Background>
+
+            <Image x:Name="simpleIronShoe" Source="/Assets/Clothes/SimpleIron/simpleIronShoe.png" Grid.Column="1" Grid.Row="1"
+                   PointerEntered="clothingItem_PointerEntered" PointerExited="clothingItem_PointerExited" PointerPressed="clothingItem_PointerPressed"/>
+            <Image x:Name="simpleIronShirt" Source="/Assets/Clothes/SimpleIron/simpleIronShirt.png" Grid.Column="3" Grid.Row="1"
+                   PointerEntered="clothingItem_PointerEntered" PointerExited="clothingItem_PointerExited" PointerPressed="clothingItem_PointerPressed"/>
+            <Image x:Name="simpleIronShield" Source="/Assets/Clothes/SimpleIron/simpleIronShield.png" Grid.Column="5" Grid.Row="1"
+                   PointerEntered="clothingItem_PointerEntered" PointerExited="clothingItem_PointerExited" PointerPressed="clothingItem_PointerPressed"/>
+            <Image x:Name="simpleIronSword" Source="/Assets/Clothes/SimpleIron/simpleIronSword.png" Grid.Column="7" Grid.Row="1"
+                   PointerEntered="clothingItem_PointerEntered" PointerExited="clothingItem_PointerExited" PointerPressed="clothingItem_PointerPressed"/>
+            <Image x:Name="simpleIronBow" Source="/Assets/Clothes/SimpleIron/simpleIronBow.png" Grid.Column="9" Grid.Row="1"
+                   PointerEntered="clothingItem_PointerEntered" PointerExited="clothingItem_PointerExited" PointerPressed="clothingItem_PointerPressed"/>
+            <Image x:Name="strongSilverShoe" Source="/Assets/Clothes/StrongSilver/strongSilverShoe.png" Grid.Column="1" Grid.Row="4"
+                   PointerEntered="clothingItem_PointerEntered" PointerExited="clothingItem_PointerExited" PointerPressed="clothingItem_PointerPressed"/>
+            <Image x:Name="strongSilverShirt" Source="/Assets/Clothes/StrongSilver/strongSilverShirt.png" Grid.Column="3" Grid.Row="4"
+                   PointerEntered="clothingItem_PointerEntered" PointerExited="clothingItem_PointerExited" PointerPressed="clothingItem_PointerPressed"/>
+            <Image x:Name="strongSilverShield" Source="/Assets/Clothes/StrongSilver/strongSilverShield.png" Grid.Column="5" Grid.Row="4"
+                   PointerEntered="clothingItem_PointerEntered" PointerExited="clothingItem_PointerExited" PointerPressed="clothingItem_PointerPressed"/>
+            <Image x:Name="strongSilverSword" Source="/Assets/Clothes/StrongSilver/strongSilverSword.png" Grid.Column="7" Grid.Row="4"
+                   PointerEntered="clothingItem_PointerEntered" PointerExited="clothingItem_PointerExited" PointerPressed="clothingItem_PointerPressed"/>
+            <Image x:Name="strongSilverBow" Source="/Assets/Clothes/StrongSilver/strongSilverBow.png" Grid.Column="9" Grid.Row="4"
+                   PointerEntered="clothingItem_PointerEntered" PointerExited="clothingItem_PointerExited" PointerPressed="clothingItem_PointerPressed"/>
+
+
+            <Viewbox Grid.Column="1" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <TextBlock x:Name="simpleIronShoePrice" Text="10" Height="30" Width="35" Loaded="Price_Loaded">
+                </TextBlock>
+            </Viewbox>
+
+            <Viewbox Grid.Column="1" Grid.Row="2" VerticalAlignment="Top" Margin="0,5,0,0">
+                <Image Source="/Assets/Elements/goldCoinSymbol.png" VerticalAlignment="Top" HorizontalAlignment="Right" Height="30" Width="70"/>
+            </Viewbox>
+
+            <Viewbox Grid.Column="3" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <TextBlock x:Name="simpleIronShirtPrice" Text="10" Height="30" Width="35" Loaded="Price_Loaded">
+                </TextBlock>
+            </Viewbox>
+
+            <Viewbox Grid.Column="3" Grid.Row="2" VerticalAlignment="Top" Margin="0,5,0,0">
+                <Image Source="/Assets/Elements/goldCoinSymbol.png" VerticalAlignment="Top" HorizontalAlignment="Right" Height="30" Width="70"/>
+            </Viewbox>
+
+            <Viewbox Grid.Column="5" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <TextBlock x:Name="simpleIronShieldPrice" Text="10" Height="30" Width="35" Loaded="Price_Loaded">
+                </TextBlock>
+            </Viewbox>
+
+            <Viewbox Grid.Column="5" Grid.Row="2" VerticalAlignment="Top" Margin="0,5,0,0">
+                <Image Source="/Assets/Elements/goldCoinSymbol.png" VerticalAlignment="Top" HorizontalAlignment="Right" Height="30" Width="70"/>
+            </Viewbox>
+
+            <Viewbox Grid.Column="7" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <TextBlock x:Name="simpleIronSwordPrice" Text="10" Height="30" Width="35" Loaded="Price_Loaded">
+                </TextBlock>
+            </Viewbox>
+
+            <Viewbox Grid.Column="7" Grid.Row="2" VerticalAlignment="Top" Margin="0,5,0,0">
+                <Image Source="/Assets/Elements/goldCoinSymbol.png" VerticalAlignment="Top" HorizontalAlignment="Right" Height="30" Width="70"/>
+            </Viewbox>
+
+            <Viewbox Grid.Column="9" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <TextBlock x:Name="simpleIronBowPrice" Text="10" Height="30" Width="35" Loaded="Price_Loaded">
+                </TextBlock>
+            </Viewbox>
+
+            <Viewbox Grid.Column="9" Grid.Row="2" VerticalAlignment="Top" Margin="0,5,0,0">
+                <Image Source="/Assets/Elements/goldCoinSymbol.png" VerticalAlignment="Top" HorizontalAlignment="Right" Height="30" Width="70"/>
+            </Viewbox>
+
+            <Viewbox Grid.Column="1" Grid.Row="5" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <TextBlock x:Name="strongSilverShoePrice" Text="10" Height="30" Width="35" Loaded="Price_Loaded">
+                </TextBlock>
+            </Viewbox>
+
+            <Viewbox Grid.Column="1" Grid.Row="5" VerticalAlignment="Top" Margin="0,5,0,0">
+                <Image Source="/Assets/Elements/goldCoinSymbol.png" VerticalAlignment="Top" HorizontalAlignment="Right" Height="30" Width="70"/>
+            </Viewbox>
+
+            <Viewbox Grid.Column="3" Grid.Row="5" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <TextBlock x:Name="strongSilverShirtPrice" Text="10" Height="30" Width="35" Loaded="Price_Loaded">
+                </TextBlock>
+            </Viewbox>
+
+            <Viewbox Grid.Column="3" Grid.Row="5" VerticalAlignment="Top" Margin="0,5,0,0">
+                <Image Source="/Assets/Elements/goldCoinSymbol.png" VerticalAlignment="Top" HorizontalAlignment="Right" Height="30" Width="70"/>
+            </Viewbox>
+
+            <Viewbox Grid.Column="5" Grid.Row="5" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <TextBlock x:Name="strongSilverShieldPrice" Text="10" Height="30" Width="35" Loaded="Price_Loaded">
+                </TextBlock>
+            </Viewbox>
+
+            <Viewbox Grid.Column="5" Grid.Row="5" VerticalAlignment="Top" Margin="0,5,0,0">
+                <Image Source="/Assets/Elements/goldCoinSymbol.png" VerticalAlignment="Top" HorizontalAlignment="Right" Height="30" Width="70"/>
+            </Viewbox>
+
+            <Viewbox Grid.Column="7" Grid.Row="5" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <TextBlock x:Name="strongSilverSwordPrice" Text="10" Height="30" Width="35" Loaded="Price_Loaded">
+                </TextBlock>
+            </Viewbox>
+
+            <Viewbox Grid.Column="7" Grid.Row="5" VerticalAlignment="Top" Margin="0,5,0,0">
+                <Image Source="/Assets/Elements/goldCoinSymbol.png" VerticalAlignment="Top" HorizontalAlignment="Right" Height="30" Width="70"/>
+            </Viewbox>
+
+            <Viewbox Grid.Column="9" Grid.Row="5" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <TextBlock x:Name="strongSilverBowPrice" Text="10" Height="30" Width="35" Loaded="Price_Loaded">
+                </TextBlock>
+            </Viewbox>
+
+            <Viewbox Grid.Column="9" Grid.Row="5" VerticalAlignment="Top" Margin="0,5,0,0">
+                <Image Source="/Assets/Elements/goldCoinSymbol.png" VerticalAlignment="Top" HorizontalAlignment="Right" Height="30" Width="70"/>
+            </Viewbox>
+
+        </Grid>
+
+
+        <Grid x:Name="goldGrid" Grid.Row="2" Grid.RowSpan="7" Grid.Column="1" Grid.ColumnSpan="9" Visibility="Collapsed">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid.Background>
+                <ImageBrush  ImageSource="/Assets/ChoosingBoards/whiteBoard.png" />
+            </Grid.Background>
+
+            <Image x:Name="goldShoe" Source="/Assets/Clothes/Gold/GoldShoe.png" Grid.Column="1" Grid.Row="1"
+                   PointerEntered="clothingItem_PointerEntered" PointerExited="clothingItem_PointerExited" PointerPressed="clothingItem_PointerPressed"/>
+            <Image x:Name="goldShirt" Source="/Assets/Clothes/Gold/GoldShirt.png" Grid.Column="3" Grid.Row="1"
+                   PointerEntered="clothingItem_PointerEntered" PointerExited="clothingItem_PointerExited" PointerPressed="clothingItem_PointerPressed"/>
+            <Image x:Name="goldShield" Source="/Assets/Clothes/Gold/GoldShield.png" Grid.Column="5" Grid.Row="1"
+                   PointerEntered="clothingItem_PointerEntered" PointerExited="clothingItem_PointerExited" PointerPressed="clothingItem_PointerPressed"/>
+            <Image x:Name="goldSword" Source="/Assets/Clothes/Gold/GoldSword.png" Grid.Column="7" Grid.Row="1"
+                   PointerEntered="clothingItem_PointerEntered" PointerExited="clothingItem_PointerExited" PointerPressed="clothingItem_PointerPressed"/>
+            <Image x:Name="goldBow" Source="/Assets/Clothes/Gold/GoldBow.png" Grid.Column="9" Grid.Row="1"
+                   PointerEntered="clothingItem_PointerEntered" PointerExited="clothingItem_PointerExited" PointerPressed="clothingItem_PointerPressed"/>
+            
+
+            <Viewbox Grid.Column="1" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <TextBlock x:Name="goldShoePrice" Text="10" Height="30" Width="35" Loaded="Price_Loaded">
+                </TextBlock>
+            </Viewbox>
+
+            <Viewbox Grid.Column="1" Grid.Row="2" VerticalAlignment="Top" Margin="0,5,0,0">
+                <Image Source="/Assets/Elements/goldCoinSymbol.png" VerticalAlignment="Top" HorizontalAlignment="Right" Height="30" Width="70"/>
+            </Viewbox>
+
+            <Viewbox Grid.Column="3" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <TextBlock x:Name="goldShirtPrice" Text="10" Height="30" Width="35" Loaded="Price_Loaded">
+                </TextBlock>
+            </Viewbox>
+
+            <Viewbox Grid.Column="3" Grid.Row="2" VerticalAlignment="Top" Margin="0,5,0,0">
+                <Image Source="/Assets/Elements/goldCoinSymbol.png" VerticalAlignment="Top" HorizontalAlignment="Right" Height="30" Width="70"/>
+            </Viewbox>
+
+            <Viewbox Grid.Column="5" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <TextBlock x:Name="goldShieldPrice" Text="10" Height="30" Width="35" Loaded="Price_Loaded">
+                </TextBlock>
+            </Viewbox>
+
+            <Viewbox Grid.Column="5" Grid.Row="2" VerticalAlignment="Top" Margin="0,5,0,0">
+                <Image Source="/Assets/Elements/goldCoinSymbol.png" VerticalAlignment="Top" HorizontalAlignment="Right" Height="30" Width="70"/>
+            </Viewbox>
+
+            <Viewbox Grid.Column="7" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <TextBlock x:Name="goldSwordPrice" Text="10" Height="30" Width="35" Loaded="Price_Loaded">
+                </TextBlock>
+            </Viewbox>
+
+            <Viewbox Grid.Column="7" Grid.Row="2" VerticalAlignment="Top" Margin="0,5,0,0">
+                <Image Source="/Assets/Elements/goldCoinSymbol.png" VerticalAlignment="Top" HorizontalAlignment="Right" Height="30" Width="70"/>
+            </Viewbox>
+
+            <Viewbox Grid.Column="9" Grid.Row="2" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <TextBlock x:Name="goldBowPrice" Text="10" Height="30" Width="35" Loaded="Price_Loaded">
+                </TextBlock>
+            </Viewbox>
+
+            <Viewbox Grid.Column="9" Grid.Row="2" VerticalAlignment="Top" Margin="0,5,0,0">
+                <Image Source="/Assets/Elements/goldCoinSymbol.png" VerticalAlignment="Top" HorizontalAlignment="Right" Height="30" Width="70"/>
+            </Viewbox>
+
+        </Grid>
+
+        <Image x:Name="whiteLeftArrow" Source="/Assets/ChoosingBoards/whiteLeftArrow.png" Grid.Column="0" Grid.Row="5" PointerEntered="whiteLeftArrow_PointerEntered"
+               PointerExited="whiteLeftArrow_PointerExited" PointerPressed="whiteLeftArrow_PointerPressed"/>
+        
+        <Image x:Name="whiteRightArrow" Source="/Assets/ChoosingBoards/whiteRightArrow.png" Grid.Column="10" Grid.Row="5" PointerEntered="whiteRightArrow_PointerEntered"
+               PointerExited="whiteRightArrow_PointerExited" PointerPressed="whiteRightArrow_PointerPressed"/>
+
+        <Image Source="/Assets/ChoosingBoards/brownBoard.png" Grid.Column="11" Grid.ColumnSpan="5" Grid.Row="2" Grid.RowSpan="7"
+               VerticalAlignment="Stretch"/>
+
+        <Image x:Name="leftIronArrow" Source="/Assets/ChoosingBoards/leftIronArrow.png" Grid.Column="12" Grid.Row="8" Grid.RowSpan="2" PointerEntered="leftIronArrow_PointerEntered"
+               PointerExited="leftIronArrow_PointerEnxited" PointerPressed="leftIronArrow_PointerPressed"/>
+        <Image x:Name="rightIronArrow" Source="/Assets/ChoosingBoards/rightIronArrow.png" Grid.Column="14" Grid.Row="8" Grid.RowSpan="2" PointerEntered="rightIronArrow_PointerEntered"
+               PointerExited="rightIronArrow_PointerExited" PointerPressed="rightIronArrow_PointerPressed"/>
+
+        <Image x:Name="heroImage" Source="/Assets/Characters/Heros/Musketeer/musketeerIdle.gif" Grid.Column="12" Grid.ColumnSpan="3" Grid.Row="5" Grid.RowSpan="2"/>
+
+        <Grid x:Name="messageGrid" Grid.Row="2" Grid.RowSpan="7" Grid.Column="2" Grid.ColumnSpan="12" Visibility="Collapsed">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.Background>
+                <ImageBrush ImageSource="/Assets/Backgrounds/shoopCard.jpg" />
+            </Grid.Background>
+            
+            <Image Source="/Assets/Characters/ShopKeeper/shopKeeper.png" Grid.Column="1" Grid.ColumnSpan="2"
+                   Grid.Row="1" Grid.RowSpan="6"/>
+
+            <Image Source="/Assets/Buttons/v.png" Grid.Column="6" Grid.Row="7" PointerEntered="clothingItem_PointerEntered"
+                   PointerExited="clothingItem_PointerExited" PointerPressed="Image_PointerPressed"/>
+
+            <Viewbox Grid.Column="3" Grid.ColumnSpan="6" Grid.Row="1" Grid.RowSpan="6" >
+                <TextBlock x:Name="helpMessage" TextWrapping="WrapWholeWords" FontFamily="Harrington"
+           VerticalAlignment="Stretch" Width="700" FontSize="40" Foreground="Chocolate" Visibility="Collapsed"
+                           Text="Hello adventurer. Greetings from my store. &#x0a;
+Everything you'll
+need for your trip is available here. Swords, shields, clothing, and 
+other items are present. Examine them and make an informed decision from
+the many options. Just make sure you have enough money to buy the thing 
+you want and that each character can only wear one item of each category."></TextBlock>
+            </Viewbox>
+            
+            <Viewbox Grid.Column="3" Grid.ColumnSpan="6" Grid.Row="2" Grid.RowSpan="4" >
+                <TextBlock x:Name="notEnoughMoneyMessage" TextWrapping="WrapWholeWords" FontFamily="Harrington"
+           VerticalAlignment="Stretch" Width="700" FontSize="40" Foreground="Chocolate" Visibility="Collapsed"
+                           Text="It looks like you do not have enough money to buy this item.
+You should go and play some more in order to earn enought coins.&#x0a;&#x0a;
+Good Luck My Friend!!!"></TextBlock>
+            </Viewbox>
+
+            <Viewbox Grid.Column="3" Grid.ColumnSpan="6" Grid.Row="2" Grid.RowSpan="3" >
+                <TextBlock x:Name="purchasedProductMessage" TextWrapping="WrapWholeWords" FontFamily="Harrington"
+           VerticalAlignment="Stretch" Width="500" FontSize="40" Foreground="Chocolate" Visibility="Collapsed"
+                           Text="Maybe you got confused dear warrior. You already bought this item!"></TextBlock>
+            </Viewbox>
+            
+            <Viewbox Grid.Column="3" Grid.ColumnSpan="6" Grid.Row="2" Grid.RowSpan="3" >
+                <TextBlock x:Name="boughtTheItemMessage" TextWrapping="WrapWholeWords" FontFamily="Harrington"
+VerticalAlignment="Stretch" Width="600" FontSize="40" Foreground="Chocolate" Visibility="Collapsed"
+                Text="An extremely wise purchase!&#x0a;&#x0a;
+You won't regret it, I assure you. I wish you well on your upcoming adventures!
+"></TextBlock>
+            </Viewbox>
+        </Grid>
+        
+    </Grid>
+</Page>
