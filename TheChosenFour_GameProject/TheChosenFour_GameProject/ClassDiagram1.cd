@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TheChosenFour_GameProject.App" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAQAAIAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TheChosenFour_GameProject.GamePage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kAASiSIAEEAACAAAEQAAAEAgAQgAAAAEAAkAQQEAAAA=</HashCode>
+      <FileName>GamePage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TheChosenFour_GameProject.HelpPage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAgAEAAAA=</HashCode>
+      <FileName>HelpPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TheChosenFour_GameProject.LevelsPage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAACAAAAAAAAAAAAAwAAAAAAAAgAgAEIAAA=</HashCode>
+      <FileName>LevelsPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TheChosenFour_GameProject.MenuPage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAABMAoAAEgQIwigAAgAFAEEQAAAAACoDAkgCqEAAQ=</HashCode>
+      <FileName>MenuPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TheChosenFour_GameProject.Records" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAgAEAAAA=</HashCode>
+      <FileName>Records.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TheChosenFour_GameProject.SignPage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gIFACAAQAAACAAoAAAAAEAAAEBACAAAgBAiAgIFAAgA=</HashCode>
+      <FileName>SignPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TheChosenFour_GameProject.Storage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQALlCAEQAAGAAAEQACAAAQBQAQAMSAAAgAqgEAAIA=</HashCode>
+      <FileName>Storage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TheChosenFour_GameProject.GameObjects.Heroes.Archer" Collapsed="true">
+    <Position X="9.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Heroes\Archer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheChosenFour_GameProject.GameObjects.Heroes.Hero" Collapsed="true">
+    <Position X="5.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIgAAIAACEAiAAAAEgIAIQAAAAQAQCCDBAAAAgggAA=</HashCode>
+      <FileName>GameObjects\Heroes\Hero.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheChosenFour_GameProject.GameObjects.Heroes.Knight" Collapsed="true">
+    <Position X="2.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Heroes\Knight.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheChosenFour_GameProject.GameObjects.Heroes.Musketeer" Collapsed="true">
+    <Position X="5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Heroes\Musketeer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheChosenFour_GameProject.GameObjects.Heroes.Wizard" Collapsed="true">
+    <Position X="7.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Heroes\Wizard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheChosenFour_GameProject.GameObjects.Lands.Land" Collapsed="true">
+    <Position X="3.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAIAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>GameObjects\Lands\Land.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheChosenFour_GameProject.GameObjects.Villains.Monster" Collapsed="true">
+    <Position X="8" Y="5.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACEAAAAAAEAICMUAAAAAAACQIBAAAAAgAAA=</HashCode>
+      <FileName>GameObjects\Villains\Monster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheChosenFour_GameProject.GameServices.AppGameEvents" Collapsed="true">
+    <Position X="16.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAIAAAAAAAAQAAgAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>GameServices\AppGameEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheChosenFour_GameProject.GameServices.AppGameObject" Collapsed="true">
+    <Position X="5.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAGAAAAAAAEIAAIAABAAAACAQAAAAAAAA=</HashCode>
+      <FileName>GameServices\AppGameObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheChosenFour_GameProject.GameServices.GameManager" Collapsed="true">
+    <Position X="9.25" Y="3.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAgiCAAAACAAAAIBAAAAAAwQQAgAAAABIAACAQgAAAA=</HashCode>
+      <FileName>GameServices\GameManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheChosenFour_GameProject.GameServices.GameScene" Collapsed="true">
+    <Position X="11.25" Y="3.75" Width="1.5" />
+    <InheritanceLine Type="GameEngine.GameServices.Scene" FixedFromPoint="true">
+      <Path>
+        <Point X="13" Y="1.549" />
+        <Point X="13.375" Y="1.549" />
+        <Point X="13.375" Y="3.375" />
+        <Point X="12" Y="3.375" />
+        <Point X="12" Y="3.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAABACAAAAAAAAIAAAIAAAAABCAAgAAAAECA=</HashCode>
+      <FileName>GameServices\GameScene.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameEngine.GameObjects.GameMovingObject" Collapsed="true">
+    <Position X="5.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="GameEngine.GameObjects.GameObject" Collapsed="true">
+    <Position X="5.5" Y="1" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="GameEngine.GameServices.Constants" Collapsed="true">
+    <Position X="17.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="GameEngine.GameServices.GameEvents" Collapsed="true">
+    <Position X="17.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="GameEngine.GameServices.Manager" Collapsed="true">
+    <Position X="9.25" Y="1" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="GameEngine.GameServices.MusicPlayer" Collapsed="true">
+    <Position X="17.5" Y="1" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="GameEngine.GameServices.Scene" Collapsed="true">
+    <Position X="11.5" Y="1" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="GameEngine.GameServices.SoundPlayer" Collapsed="true">
+    <Position X="19.25" Y="1" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Arial" Size="10" />
+</ClassDiagram>
